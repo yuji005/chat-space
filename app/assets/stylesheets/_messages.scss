@@ -19,104 +19,108 @@ html, body {
       font-size: 16px;
       height: 50px;
       color: #FFFFFF;
-      padding: 20px 0px 20px 20px;
+      padding: 35px 0px 20px 20px;
     }
     .leftcontents__name {
       font-size: 15px;
       height: 15px;
       color: #FFFFFF;
-      padding: 20px 0px 20px 20px;
+      padding: 20px 20px 0px 20px;
     }
     .leftcontents__namesub {
       font-size: 11px;
       height: 11px;
       color: #FFFFFF;
-      padding: 20px 0px 20px 20px;
+      padding: 5px 20px 0px 20px;
     }
     .leftcontents__message {
       font-size: 15px;
       height: 15px;
       color: #FFFFFF;
-      padding: 0px 0px 20px 20px;
+      padding: 40px 20px 0px 20px;
     }
     .leftcontents__messagesub {
       font-size: 11px;
       height: 11px;
       color: #FFFFFF;
-      padding: 20px 0px 20px 20px;
+      padding: 5px 20px 0px 20px;
     }
     .leftcontents__group {
       font-size: 15px;
       height: 15px;
       color: #FFFFFF;
-      padding: 20px 0px 20px 20px;
+      padding: 40px 20px 0px 20px;
     }
     .leftcontents__groupsub {
       font-size: 11px;
       height: 20px;
       color: #FFFFFF;
-      padding: 0px 0px 20px 20px;
+      padding: 5px 20px 10px 20px;
     }
   }
   .rightcontents {
     height: 100%;
     width: calc(100% - 300px);
     float: right;
-    .rightcontents__header{
-      font-size: 20px;
-      color: #333333;
-      padding-top: 35px;
-      padding: 40px 0px 40px 40px;
-    }
-    .rightcontents__headersub{
-      font-size: 12px;
-      color: #999999;
-      padding: 40px 0px 40px 40px;
-    }
-  }
-    .rightcontents__name{
-      height: 15px;
-      font-size: 15px;
-      color: black;
-      padding: 46px 40px 0px 40px;
-    }
-    .rightcontents__namesub{
-      height: 5px;
-      font-size: 10px;
-      color: black;
-      padding: 10px 40px 0px 40px;
-    }
-    .rightcontents__main{
-      height: 10px;
-      font-size: 16px;
-      color: #434A54;
-      padding-top: 40px;
-      padding: 40px 40px 0px 40px;
-    }
-    .rightcontents__mainsub{
-      height: 5px;
-      font-size: 10px;
-      padding: 10px 40px 0px 40px;
-    }
-    .rightcontents__under{
-      height: 12px;
-      font-size: 12px;
-      color: #999999;
-      padding: 40px 40px 0px 40px;
-    }
-    .rightcontents__undersub{
-      height: 10px;
-      font-size: 10px;
-      padding: 10px 40px 0px 40px;
+      .rightcontents__header{
+        font-size: 20px;
+        color: #333333;
+        padding: 35px 40px 0px 40px;
+      }
+      .rightcontents__headersub{
+        font-size: 12px;
+        color: #999999;
+        padding: 15px 40px 0px 40px;
+      }
+    .rightcontents__messages{
+      padding: 0px 40px 310px 40px;
+      border: solid #eeeeee;
+      .rightcontents__name{
+        height: 15px;
+        font-size: 15px;
+        color: black;
+        padding-top: 46px;
+      }
+      .rightcontents__namesub{
+        height: 5px;
+        font-size: 10px;
+        color: black;
+        padding-top: 10px;
+      }
+      .rightcontents__main{
+        height: 10px;
+        font-size: 16px;
+        color: #434A54;
+        padding-top: 40px;
+      }
+      .rightcontents__mainsub{
+        height: 5px;
+        font-size: 10px;
+        padding-top: 10px;
+      }
+      .rightcontents__under{
+        height: 12px;
+        font-size: 12px;
+        color: #999999;
+        padding-top: 40px;
+      }
+      .rightcontents__undersub{
+        height: 10px;
+        font-size: 10px;
+        padding-top: 10px;
+      }
     }
     .rightcontents__bottom{
-      background-color: black;
-      height: 10px;
+      height: 50px;
       width: 100%;
-      font-size: 16px;
-      color: #434A54;
-      padding: 100px 0px 0px 40px;
+      padding: 20px 40px 20px 40px;
     }
+      .rightcontents__bottomwrite{
+        font-size: 16px;
+        color: #434A54;
+        padding-left: 10px;
+    }
+  }
 }
 
 .clearfix:after{
