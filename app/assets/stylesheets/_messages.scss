@@ -1,0 +1,127 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+
+
+  .leftcontents {
+    background-color: #2f3e51;
+    width: 300px;
+    height: 100%;
+    color: white;
+    float: left;
+    .leftcontents__header {
+      background-color: #253141;
+      font-size: 16px;
+      height: 50px;
+      color: #FFFFFF;
+      padding: 35px 20px 0 20px 0;
+    }
+    .leftcontents__name {
+      font-size: 15px;
+      height: 15px;
+      color: #FFFFFF;
+      padding: 20px 20px 0 20px 0;
+    }
+    .leftcontents__namesub {
+      font-size: 11px;
+      height: 11px;
+      color: #FFFFFF;
+      padding: 5px 20px 0 20px 0;
+    }
+    .leftcontents__message {
+      font-size: 15px;
+      height: 15px;
+      color: #FFFFFF;
+      padding: 40px 20px 0 20px 0;
+    }
+    .leftcontents__messagesub {
+      font-size: 11px;
+      height: 11px;
+      color: #FFFFFF;
+      padding: 5px 20px 0 20px 0;
+    }
+    .leftcontents__group {
+      font-size: 15px;
+      height: 15px;
+      color: #FFFFFF;
+      padding: 40px 20px 0 20px 0;
+    }
+    .leftcontents__groupsub {
+      font-size: 11px;
+      height: 20px;
+      color: #FFFFFF;
+      padding: 5px 20px 0 20px 0;
+    }
+  }
+  .rightcontents {
+    height: 100%;
+    width: calc(100% - 300px);
+    float: right;
+    .rightcontents__header{
+      font-size: 20px;
+      color: #333333;
+      padding-top: 35px;
+      padding: 0 40px 0 40px 0;
+    }
+    .rightcontents__headersub{
+      font-size: 12px;
+      color: #999999;
+      padding: 0 40px 0 40px 0;
+    }
+  }
+    .rightcontents__name{
+      height: 15px;
+      font-size: 15px;
+      color: black;
+      padding: 46px 40px 0 40px;
+    }
+    .rightcontents__namesub{
+      height: 5px;
+      font-size: 10px;
+      color: black;
+      padding: 10px 40px 0 40px;
+    }
+    .rightcontents__main{
+      height: 10px;
+      font-size: 16px;
+      color: #434A54;
+      padding-top: 40px;
+      padding: 40px 40px 0 40px;
+    }
+    .rightcontents__mainsub{
+      height: 5px;
+      font-size: 10px;
+      padding: 10px 40px 0 40px;
+    }
+    .rightcontents__under{
+      height: 12px;
+      font-size: 12px;
+      color: #999999;
+      padding: 40px 40px 0 40px;
+    }
+    .rightcontents__undersub{
+      height: 10px;
+      font-size: 10px;
+      padding: 10px 40px 0px 40px;
+    }
+    .rightcontents__bottom{
+      background-color: black;
+      height: 10px;
+      width: 100%;
+      font-size: 16px;
+      color: #434A54;
+      padding: 310px 40px 0px 40px;
+      float: right;
+    }
+}
+
+.clearfix:after{
+  content: "";
+  display: block;
+  clear: both;
+}
