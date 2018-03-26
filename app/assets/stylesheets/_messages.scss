@@ -24,6 +24,24 @@ html, body {
         display: inline-block;
         font-weight: bold;
       }
+      .header__list{
+        display: inline-block;
+        float: right;
+        padding-top: 35px;
+        .header__listnew:{
+          color: #FFFFFF;
+          font-size: 16px;
+        }
+      }
+      .header__list{
+        display: inline-block;
+        float: right;
+        padding-top: 35px;
+        .header__listnew:{
+          color: #FFFFFF;
+          font-size: 16px;
+        }
+      }
     }
     .groups{
       height: calc(100% - 100px);
