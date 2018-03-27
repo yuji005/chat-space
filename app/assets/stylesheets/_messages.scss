@@ -4,8 +4,9 @@
 // ベーステキストカラー
 $font_color: #FFFFFF;
 $font_color_hover: #434A54;
+$font_gutter: 16px;
 
-html, body {
+html, body{
   height: 100%;
   margin: 0;
   padding: 0;
@@ -22,8 +23,8 @@ html, body {
       background-color: #253141;
       height: 100px;
       padding: 0px 20px;
-      .header__name{
-        font-size: 16px;
+      &__name{
+        font-size: $font_gutter;
         padding-top: 35px;
         display: inline-block;
         font-weight: bold;
@@ -34,17 +35,17 @@ html, body {
         .header__list{
           display: inline-block;
           padding-top: 35px;
-          .header__listnew {
+          &__listnew{
             color: $font_color;
-            font-size: 16px;
+            font-size: $font_gutter;
           }
         }
         .header__list{
           display: inline-block;
           padding-top: 35px;
-          .header__listnew {
+          &__listnew{
             color: $font_color;
-            font-size: 16px;
+            font-size: $font_gutter;
           }
         }
       }
@@ -55,11 +56,11 @@ html, body {
       .group{
         box-sizing: border-box ;
         padding: 20px 0px 40px;
-        .groupname{
+        &__name{
           font-size: 15px;
           color: $font_color;
         }
-        .groupmessage{
+        &__message{
           font-size: 11px;
           color: $font_color;
           margin-top: 5px;
@@ -75,12 +76,12 @@ html, body {
       padding: 0 40px;
       .leftheader{
         float: left;
-        .leftheader__title{
+        &__title{
           font-size: 20px;
           color: #333333;
           margin-top: 35px;
         }
-        .leftheader__members{
+        &__members{
           font-size: 12px;
           display: flex;
           color: #999999;
@@ -103,7 +104,7 @@ html, body {
         border: 1px solid #38AEF0;
         color: #38AEF0;
         float: right;
-        .rightheader__button{
+        &__button{
           text-decoration: none
         }
       }
@@ -118,12 +119,12 @@ html, body {
         margin-bottom: 40px;
         .uppermessages{
           display: flex;
-          .uppermessages__username{
+          &__username{
             color: $font_color_hover;
-            font-size: 16px;
+            font-size: $font_gutter;
             font-weight: bold;
           }
-          .uppermessages__date{
+          &__date{
             color: $font_color_hover;
             font-size: 12px;
             padding-left: 10px;
@@ -131,7 +132,7 @@ html, body {
         }
         .lowermessages{
           margin-top: 10px;
-          .lowermessages__content{
+          &__content{
             color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
@@ -142,12 +143,12 @@ html, body {
         margin-bottom: 40px;
         .uppermessages{
           display: flex;
-          .uppermessages__username{
+          &__username{
             color: $font_color_hover;
-            font-size: 16px;
+            font-size: $font_gutter;
             font-weight: bold;
           }
-          .uppermessages__date{
+          &__date{
             color: $font_color_hover;
             font-size: 12px;
             padding-left: 10px;
@@ -155,7 +156,7 @@ html, body {
         }
         .lowermessages{
           margin-top: 10px;
-          .lowermessages__content{
+          &__content{
             color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
@@ -166,12 +167,12 @@ html, body {
         margin-bottom: 40px;
         .uppermessages{
           display: flex;
-          .uppermessages__username{
+          &__username{
             color: $font_color_hover;
-            font-size: 16px;
+            font-size: $font_gutter;
             font-weight: bold;
           }
-          .uppermessages__date{
+          &__date{
             color: $font_color_hover;
             font-size: 12px;
             padding-left: 10px;
@@ -179,7 +180,7 @@ html, body {
         }
         .lowermessages{
           margin-top: 10px;
-          .lowermessages__content{
+          &__content{
             color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
@@ -192,7 +193,7 @@ html, body {
       box-sizing: border-box;
       height: 90px;
       padding: 20px 50px 20px 40px;
-      .form__messasge{
+      &__messasge{
         border: none;
         box-sizing: border-box;
         height: 50px;
@@ -201,7 +202,7 @@ html, body {
         float: left;
         background-color: white;
       }
-      .form__contents{
+      &__contents{
         background-color: #FFFFFF;
         float: left;
         height: 50px;
@@ -211,7 +212,7 @@ html, body {
           line-height: 50px;
         }
       }
-      .form__sendbutton{
+      &__sendbutton{
         background-color: #38AEF0;
         border: none;
         float: right;
@@ -219,7 +220,7 @@ html, body {
         margin-left: 15px;
         padding: 0px 30px;
         color: $font_color;
-        font-size: 16px;
+        font-size: $font_gutter;
         line-height: 50px;
       }
     }
