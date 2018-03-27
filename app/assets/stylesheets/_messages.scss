@@ -23,23 +23,25 @@ html, body {
         padding-top: 35px;
         display: inline-block;
         font-weight: bold;
+        float: left;
       }
-      .header__list{
-        display: inline-block;
+      .header__lists{
         float: right;
-        padding-top: 35px;
-        .header__listnew:{
-          color: #FFFFFF;
-          font-size: 16px;
+        .header__list{
+          display: inline-block;
+          padding-top: 35px;
+          .header__listnew:{
+            color: #FFFFFF;
+            font-size: 16px;
+          }
         }
-      }
-      .header__list{
-        display: inline-block;
-        float: right;
-        padding-top: 35px;
-        .header__listnew:{
-          color: #FFFFFF;
-          font-size: 16px;
+        .header__list{
+          display: inline-block;
+          padding-top: 35px;
+          .header__listnew:{
+            color: #FFFFFF;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -186,13 +188,14 @@ html, body {
       box-sizing: border-box;
       height: 90px;
       padding: 20px 50px 20px 40px;
-      .form__message{
+      .form__messasge{
         border: none;
         box-sizing: border-box;
         height: 50px;
         padding: 0px 10px;
         width: calc(100% - 150px);
         float: left;
+        background-color: white;
       }
       .form__contents{
         background-color: #FFFFFF;
@@ -213,7 +216,10 @@ html, body {
         padding: 0px 30px;
         color: #FFFFFF;
         font-size: 16px;
+        line-height: 50px;
       }
     }
   }
+
+
 }
