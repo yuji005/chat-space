@@ -5,25 +5,24 @@
 $font_color: #FFFFFF;
 $font_color_hover: #434A54;
 
-
 html, body {
   height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.wrapper {
+.wrapper{
   display: flex;
-  .sidebar {
+  .sidebar{
     background-color: #2f3e51;
     width: 300px;
     color: $font_color;
-    box-sizing: border-box ;
-    .header {
+    box-sizing: border-box;
+    .header{
       background-color: #253141;
       height: 100px;
       padding: 0px 20px;
-      .headername{
+      .header__name{
         font-size: 16px;
         padding-top: 35px;
         display: inline-block;
@@ -35,7 +34,7 @@ html, body {
         .header__list{
           display: inline-block;
           padding-top: 35px;
-          .header__listnew:{
+          .header__listnew {
             color: $font_color;
             font-size: 16px;
           }
@@ -43,7 +42,7 @@ html, body {
         .header__list{
           display: inline-block;
           padding-top: 35px;
-          .header__listnew:{
+          .header__listnew {
             color: $font_color;
             font-size: 16px;
           }
@@ -53,14 +52,14 @@ html, body {
     .groups{
       height: calc(100% - 100px);
       padding: 0px 20px;
-      .group {
+      .group{
         box-sizing: border-box ;
         padding: 20px 0px 40px;
-        .groupname {
+        .groupname{
           font-size: 15px;
           color: $font_color;
         }
-        .groupmessage {
+        .groupmessage{
           font-size: 11px;
           color: $font_color;
           margin-top: 5px;
@@ -68,7 +67,7 @@ html, body {
       }
     }
   }
-  .chat {
+  .chat{
     width: calc(100% - 300px);
     .header{
       box-sizing: border-box ;
@@ -225,6 +224,4 @@ html, body {
       }
     }
   }
-
-
 }
