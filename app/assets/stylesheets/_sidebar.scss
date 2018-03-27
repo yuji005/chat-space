@@ -1,0 +1,54 @@
+  .sidebar{
+    background-color: #2f3e51;
+    width: 300px;
+    color: $font_color;
+    box-sizing: border-box;
+    .header{
+      background-color: #253141;
+      height: 100px;
+      padding: 0px 20px;
+      &__name{
+        font-size: $font_gutter;
+        padding-top: 35px;
+        display: inline-block;
+        font-weight: bold;
+        float: left;
+      }
+      .header__lists{
+        float: right;
+        .header__list{
+          display: inline-block;
+          padding-top: 35px;
+          &__listnew{
+            color: $font_color;
+            font-size: $font_gutter;
+          }
+        }
+        .header__list{
+          display: inline-block;
+          padding-top: 35px;
+          &__listnew{
+            color: $font_color;
+            font-size: $font_gutter;
+          }
+        }
+      }
+    }
+    .groups{
+      height: calc(100% - 100px);
+      padding: 0px 20px;
+      .group{
+        box-sizing: border-box ;
+        padding: 20px 0px 40px;
+        &__name{
+          font-size: 15px;
+          color: $font_color;
+        }
+        &__message{
+          font-size: 11px;
+          color: $font_color;
+          margin-top: 5px;
+        }
+      }
+    }
+  }

@@ -68,9 +68,11 @@
               けけけ
       .form
         .form__messasge
+          %input.form__message{name: 'text',placeholder: 'type a message'}
         .form__contents
           .form__image
-            = fa_icon "picture-o"
+            %input{type:'file', style: 'display:none'}
+            = link_to "" do
+              = fa_icon "picture-o"
         .form__sendbutton
           Send
-
