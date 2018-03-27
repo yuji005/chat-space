@@ -1,6 +1,11 @@
 // Place all the styles related to the messages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+// ベーステキストカラー
+$font_color: #FFFFFF;
+$font_color_hover: #434A54;
+
+
 html, body {
   height: 100%;
   margin: 0;
@@ -12,7 +17,7 @@ html, body {
   .sidebar {
     background-color: #2f3e51;
     width: 300px;
-    color: #FFFFFF;
+    color: $font_color;
     box-sizing: border-box ;
     .header {
       background-color: #253141;
@@ -31,7 +36,7 @@ html, body {
           display: inline-block;
           padding-top: 35px;
           .header__listnew:{
-            color: #FFFFFF;
+            color: $font_color;
             font-size: 16px;
           }
         }
@@ -39,7 +44,7 @@ html, body {
           display: inline-block;
           padding-top: 35px;
           .header__listnew:{
-            color: #FFFFFF;
+            color: $font_color;
             font-size: 16px;
           }
         }
@@ -53,11 +58,11 @@ html, body {
         padding: 20px 0px 40px;
         .groupname {
           font-size: 15px;
-          color: #FFFFFF;
+          color: $font_color;
         }
         .groupmessage {
           font-size: 11px;
-          color: #FFFFFF;
+          color: $font_color;
           margin-top: 5px;
         }
       }
@@ -115,12 +120,12 @@ html, body {
         .uppermessages{
           display: flex;
           .uppermessages__username{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 16px;
             font-weight: bold;
           }
           .uppermessages__date{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 12px;
             padding-left: 10px;
           }
@@ -128,7 +133,7 @@ html, body {
         .lowermessages{
           margin-top: 10px;
           .lowermessages__content{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
           }
@@ -139,12 +144,12 @@ html, body {
         .uppermessages{
           display: flex;
           .uppermessages__username{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 16px;
             font-weight: bold;
           }
           .uppermessages__date{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 12px;
             padding-left: 10px;
           }
@@ -152,7 +157,7 @@ html, body {
         .lowermessages{
           margin-top: 10px;
           .lowermessages__content{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
           }
@@ -163,12 +168,12 @@ html, body {
         .uppermessages{
           display: flex;
           .uppermessages__username{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 16px;
             font-weight: bold;
           }
           .uppermessages__date{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 12px;
             padding-left: 10px;
           }
@@ -176,7 +181,7 @@ html, body {
         .lowermessages{
           margin-top: 10px;
           .lowermessages__content{
-            color: #434A54;
+            color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
           }
@@ -214,7 +219,7 @@ html, body {
         height: 50px;
         margin-left: 15px;
         padding: 0px 30px;
-        color: #FFFFFF;
+        color: $font_color;
         font-size: 16px;
         line-height: 50px;
       }
