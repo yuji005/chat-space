@@ -8,9 +8,6 @@ html, body{
   height: 100%;
 }
 
-$font_color: #FFFFFF;
-$font_color_hover: #434A54;
-$font_gutter: 16px;
 
 .wrapper{
   display: flex;
@@ -143,11 +140,15 @@ $font_gutter: 16px;
         border: none;
         box-sizing: border-box;
         height: 50px;
-        padding: 0px 10px;
         width: calc(100% - 150px);
         float: left;
         background-color: white;
       }
+        .form__message{
+          height: 50px;
+          width: 548px;
+          border: none;
+        }
       &__contents{
         background-color: #FFFFFF;
         float: left;

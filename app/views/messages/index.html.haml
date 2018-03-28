@@ -71,8 +71,8 @@
           %input.form__message{name: 'text',placeholder: 'type a message'}
         .form__contents
           .form__image
-            %input{type:'file', style: 'display:none'}
-            = link_to "" do
+            %label
               = fa_icon "picture-o"
+              %input#fapicture-o{:style => "display:none;", :type => "file"}/
         .form__sendbutton
           Send
