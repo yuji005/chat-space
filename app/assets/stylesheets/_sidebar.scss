@@ -9,10 +9,9 @@
       height: 100px;
       padding: 0px 20px;
       &__name{
-        font-size: $font_gutter;
+        @include circle;
         padding-top: 35px;
         display: inline-block;
-        font-weight: bold;
         float: left;
       }
       .header__lists{
