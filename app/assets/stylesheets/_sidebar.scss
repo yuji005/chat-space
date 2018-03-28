@@ -25,13 +25,9 @@
             font-size: $font_gutter;
           }
         }
-        .header__list{
-          display: inline-block;
-          padding-top: 35px;
-          &__listnew{
-            color: $font_color;
-            font-size: $font_gutter;
-          }
+        &__listnew{
+          color: $font_color;
+          font-size: $font_gutter;
         }
       }
     }
