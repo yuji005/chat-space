@@ -32,10 +32,6 @@ html, body{
             display: inline-block;
             padding-right: 5px
           }
-          .member{
-            display: inline-block;
-            padding-right: 5px
-          }
         }
       }
       .rightheader{
@@ -79,48 +75,42 @@ html, body{
           }
         }
       }
-      .messages{
-        margin-bottom: 40px;
-        .uppermessages{
-          display: flex;
-          &__username{
-            @include circle;
-            color: $font_color_hover;
-          }
-          &__date{
-            @include triangle;
-            padding-left: 10px;
-          }
+      .uppermessages{
+        display: flex;
+        &__username{
+          @include circle;
+          color: $font_color_hover;
         }
-        .lowermessages{
-          margin-top: 10px;
-          &__content{
-            color: $font_color_hover;
-            font-size: 14px;
-            margin-bottom: 10px;
-          }
+        &__date{
+          @include triangle;
+          padding-left: 10px;
         }
       }
-      .messages{
-        margin-bottom: 40px;
-        .uppermessages{
-          display: flex;
-          &__username{
-            @include circle;
-            color: $font_color_hover;
-          }
-          &__date{
-            @include triangle;
-            padding-left: 10px;
-          }
+      .lowermessages{
+        margin-top: 10px;
+        &__content{
+          color: $font_color_hover;
+          font-size: 14px;
+          margin-bottom: 10px;
         }
-        .lowermessages{
-          margin-top: 10px;
-          &__content{
-            color: $font_color_hover;
-            font-size: 14px;
-            margin-bottom: 10px;
-          }
+      }
+      .uppermessages{
+        display: flex;
+        &__username{
+          @include circle;
+          color: $font_color_hover;
+        }
+        &__date{
+          @include triangle;
+          padding-left: 10px;
+        }
+      }
+      .lowermessages{
+        margin-top: 10px;
+        &__content{
+          color: $font_color_hover;
+          font-size: 14px;
+          margin-bottom: 10px;
         }
       }
     }
