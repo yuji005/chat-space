@@ -1,0 +1,158 @@
+// Place all the styles related to the messages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// ベーステキストカラー
+
+
+html, body{
+  height: 100%;
+}
+
+
+.wrapper{
+  display: flex;
+  .chat{
+    width: calc(100% - 300px);
+    .header{
+      box-sizing: border-box ;
+      height: 100px;
+      padding: 0 40px;
+      .leftheader{
+        float: left;
+        &__title{
+          font-size: 20px;
+          color: #333333;
+          margin-top: 35px;
+        }
+        &__members{
+          @include triangle;
+          display: flex;
+          margin-top: 15px;
+          .member{
+            display: inline-block;
+            padding-right: 5px
+          }
+        }
+      }
+      .rightheader{
+        height: 40px;
+        padding: 0px 20px;
+        margin-top: 28px;
+        line-height: 40px;
+        border: 1px solid #38AEF0;
+        color: #38AEF0;
+        float: right;
+        &__button{
+          text-decoration: none
+        }
+      }
+    }
+    .mainmessages{
+      background-color: #FAFAFA;
+      box-sizing: border-box ;
+      height: calc(100vh - 190px);
+      overflow: scroll;
+      padding: 46px 40px 0px;
+      .messages{
+        margin-bottom: 40px;
+        .uppermessages{
+          display: flex;
+          &__username{
+            @include circle;
+            color: $font_color_hover;
+          }
+          &__date{
+            @include triangle;
+            padding-left: 10px;
+          }
+        }
+        .lowermessages{
+          margin-top: 10px;
+          &__content{
+            color: $font_color_hover;
+            font-size: 14px;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .uppermessages{
+        display: flex;
+        &__username{
+          @include circle;
+          color: $font_color_hover;
+        }
+        &__date{
+          @include triangle;
+          padding-left: 10px;
+        }
+      }
+      .lowermessages{
+        margin-top: 10px;
+        &__content{
+          color: $font_color_hover;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+      .uppermessages{
+        display: flex;
+        &__username{
+          @include circle;
+          color: $font_color_hover;
+        }
+        &__date{
+          @include triangle;
+          padding-left: 10px;
+        }
+      }
+      .lowermessages{
+        margin-top: 10px;
+        &__content{
+          color: $font_color_hover;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .form{
+      background-color: #DDDDDD;
+      box-sizing: border-box;
+      height: 90px;
+      padding: 20px 50px 20px 40px;
+      &__messasge{
+        border: none;
+        box-sizing: border-box;
+        height: 50px;
+        width: calc(100% - 150px);
+        float: left;
+        background-color: white;
+      }
+        .form__message{
+          height: 50px;
+          width: 548px;
+          border: none;
+        }
+      &__contents{
+        background-color: #FFFFFF;
+        float: left;
+        height: 50px;
+        padding-right: 10px;
+        .form__image{
+          font-size: 20px;
+          line-height: 50px;
+        }
+      }
+      &__sendbutton{
+        background-color: #38AEF0;
+        border: none;
+        float: right;
+        height: 50px;
+        margin-left: 15px;
+        padding: 0px 30px;
+        color: $font_color;
+        font-size: $font_gutter;
+        line-height: 50px;
+      }
+    }
+  }
+}
