@@ -55,7 +55,7 @@ html, body{
     .mainmessages{
       background-color: #FAFAFA;
       box-sizing: border-box ;
-      height: calc(100%-100px-90px);
+      height: calc(100vh - 190px);
       overflow: scroll;
       padding: 46px 40px 0px;
       .messages{
