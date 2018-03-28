@@ -10,6 +10,7 @@
       padding: 0px 20px;
       &__name{
         @include circle;
+        color: #FFFFFF;
         padding-top: 35px;
         display: inline-block;
         float: left;

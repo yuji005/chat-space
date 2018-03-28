@@ -1,6 +1,9 @@
 @mixin circle {
      font-size: $font_gutter;
      font-weight: bold;
-     color: #FFFFFF;
 }
 
+@mixin triangle {
+     font-size: 12px;
+     color: #999999;
+}
