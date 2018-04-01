@@ -55,20 +55,20 @@ html, body{
       padding: 46px 40px 0px;
       .messages{
         margin-bottom: 40px;
-        .uppermessages{
+        .upper-messages{
           display: flex;
-          &__username{
+          .upper-message__user-name{
             @include circle;
             color: $font_color_hover;
           }
-          &__date{
+          .upper-message__date{
             @include triangle;
             padding-left: 10px;
           }
         }
-        .lowermessages{
+        .lower-messages{
           margin-top: 10px;
-          &__content{
+          .lower-message__content{
             color: $font_color_hover;
             font-size: 14px;
             margin-bottom: 10px;
@@ -114,45 +114,44 @@ html, body{
         }
       }
     }
-    .form{
-      background-color: #DDDDDD;
-      box-sizing: border-box;
-      height: 90px;
-      padding: 20px 50px 20px 40px;
-      &__messasge{
-        border: none;
-        box-sizing: border-box;
-        height: 50px;
-        width: calc(100% - 150px);
-        float: left;
-        background-color: white;
-      }
-        .form__message{
-          height: 50px;
-          width: 548px;
-          border: none;
-        }
-      &__contents{
-        background-color: #FFFFFF;
-        float: left;
-        height: 50px;
-        padding-right: 10px;
-        .form__image{
-          font-size: 20px;
-          line-height: 50px;
-        }
-      }
-      &__sendbutton{
-        background-color: #38AEF0;
-        border: none;
-        float: right;
-        height: 50px;
-        margin-left: 15px;
-        padding: 0px 30px;
-        color: $font_color;
-        font-size: $font_gutter;
-        line-height: 50px;
-      }
-    }
   }
+}
+.form{
+  background-color: #DDDDDD;
+  box-sizing: border-box;
+  height: 90px;
+  padding: 20px 50px 20px 40px;
+}
+.form__message__js__content{
+  border: none;
+  box-sizing: border-box;
+  height: 50px;
+  width: calc(100% - 150px);
+  float: left;
+  background-color: white;
+}
+.form__mask{
+  background-color: #FFFFFF;
+  float: left;
+  height: 50px;
+  padding-right: 10px;
+  .form__mask__image{
+    font-size: 20px;
+    line-height: 50px;
+  }
+}
+.form__submit{
+  background-color: #38AEF0;
+  border: none;
+  float: right;
+  height: 50px;
+  margin-left: 15px;
+  padding: 0px 30px;
+  color: $font_color;
+  font-size: $font_gutter;
+  line-height: 50px;
+}
+
+#message_image{
+  display: none;
 }

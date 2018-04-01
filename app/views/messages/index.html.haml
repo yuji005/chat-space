@@ -1,1 +1,27 @@
-= render 'shared/screen'
+%body
+.wrapper
+
+  = render 'shared/sidebar'
+
+  .chat
+    .header
+      .leftheader
+        .leftheader__title
+          タイトル
+        .leftheader__members
+          メンバーズ
+          .member
+      .rightheader
+        .rightheader__button
+          Edit
+    .mainmessages
+      .messages
+        = render @messages
+    .form
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'form__message__js__content', placeholder: 'type a message'
+        .form__mask
+          = f.label :image, class: 'form__mask__image' do
+            = fa_icon 'picture-o', class: 'icon'
+            = f.file_field :image, class: 'hidden'
+        = f.submit 'Send', class: 'form__submit'
