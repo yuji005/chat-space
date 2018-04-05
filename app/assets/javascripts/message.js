@@ -1,4 +1,23 @@
 $(function(){
+   function buildHTML(message){
+    var html = `<div class="messages">
+                  <div class="upper-messages">
+                    <div class="upper-message__user-name">
+                      ${message.user.name}
+                    </div>
+                      <div class="upper-message__date">
+                      ${message.created_at}
+                      </div>
+                  </div>
+                  <div class="lower-meesage">
+                    <p class="lower-message__content">
+                      ${message.content}
+                    </p>
+                  <image src="${message.image.url"}, class: 'lower-message__image' >
+                  </div>
+                </div>
+    return html;
+  }
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
@@ -10,5 +29,12 @@ $(function(){
       dataType: 'json',
       processData: false,
       contentType: false
+    })
+    .done(function(data){
+      var html = buildHTML(data);
+      $('.comments').append(html)
+      $('.textbox').val('')
+    })
   })
 })
+
