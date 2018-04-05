@@ -3,7 +3,7 @@ $(function(){
     var html = `<div class="messages">
                   <div class="upper-messages">
                     <div class="upper-message__user-name">
-                      ${message.user.name}
+                      ${message.user_name}
                     </div>
                       <div class="upper-message__date">
                       ${message.created_at}
@@ -32,7 +32,7 @@ $(function(){
     })
     .done(function(data){
       var html = buildHTML(data);
-      $('.comments').append(html)
+      $('.messages').append(html)
       $('.textbox').val('')
     })
   })
