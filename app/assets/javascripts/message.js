@@ -1,5 +1,5 @@
 $(function(){
-   function buildHTML(message){
+  function buildHTML(message){
     var html = `<div class="messages">
                   <div class="upper-messages">
                     <div class="upper-message__user-name">
@@ -13,9 +13,10 @@ $(function(){
                     <p class="lower-message__content">
                       ${message.content}
                     </p>
-                  <img src="${message.image.url"}, class: 'lower-message__content' >
+                  <img src="${message.image.url}", class: 'lower-message__content'>
                   </div>
                 </div>
+                `
     return html;
   }
   $('#new_message').on('submit', function(e){
@@ -39,5 +40,4 @@ $(function(){
       alert('error');
     })
   })
-})
-
+});
