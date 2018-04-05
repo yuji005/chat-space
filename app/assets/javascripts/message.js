@@ -13,7 +13,7 @@ $(function(){
                     <p class="lower-message__content">
                       ${message.content}
                     </p>
-                  <img src="${message.image.url"}, class: 'lower-message__image' >
+                  <img src="${message.image.url"}, class: 'lower-message__content' >
                   </div>
                 </div>
     return html;
@@ -35,6 +35,8 @@ $(function(){
       $('.messages').append(html)
       $('html,content').animate({scrollTop:$(".messages")[0].scrollHeight},'fast'):
     })
+    .fail(function(){
+      alert('error');
     })
   })
 })
