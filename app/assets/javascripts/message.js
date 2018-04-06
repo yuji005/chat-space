@@ -1,10 +1,6 @@
 $(function(){
   function buildHTML(message){
-    if (message.image.url == null){
-      message.image.url = ""
-    }
-    var html = `<div class="messages">
-                  <div class="upper-messages">
+    var html = `<div class="upper-messages">
                     <div class="upper-message__user-name">
                       ${message.user_name}
                     </div>
@@ -16,9 +12,8 @@ $(function(){
                     <p class="lower-message__content">
                       ${message.content}
                     </p>
-                  <img src="${message.image.url}", class: 'lower-message__content'>
+                  <img src="${message.image}", class: 'lower-message__content'>
                   </div>
-                </div>
                 `
     return html;
   }
@@ -35,15 +30,15 @@ $(function(){
       contentType: false
     })
     .done(function(data){
+      console.log(data);
       var html = buildHTML(data);
-      $('.messages').append(html)
-      $('.mainmessages').animate({scrollTop:$(".messages")[0].scrollHeight},'fast');
-      $(".form__message__js__content").val("");
-      $this.get(0).reset();
+      $('.messagesa').append(html)
+      $('.mainmessages').animate({scrollTop:$('.messages')[0].scrollHeight},'fast');
+      $('.form__message__js__content').val("");
+      $('.form__submit').prop('disabled', false)
     })
     .fail(function(){
       alert('error');
     })
-    return false;
   })
 });
