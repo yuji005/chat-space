@@ -1,5 +1,8 @@
 $(function(){
   function buildHTML(message){
+    if (message.image.url == null){
+      message.image.url = ""
+    }
     var html = `<div class="messages">
                   <div class="upper-messages">
                     <div class="upper-message__user-name">
@@ -34,10 +37,13 @@ $(function(){
     .done(function(data){
       var html = buildHTML(data);
       $('.messages').append(html)
-      $('html,content').animate({scrollTop:$(".messages")[0].scrollHeight},'fast'):
+      $('.mainmessages').animate({scrollTop:$(".messages")[0].scrollHeight},'fast');
+      $(".form__message__js__content").val("");
+      $this.get(0).reset();
     })
     .fail(function(){
       alert('error');
     })
+    return false;
   })
 });
