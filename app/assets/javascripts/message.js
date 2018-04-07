@@ -1,6 +1,11 @@
 $(function(){
   function buildHTML(message){
-    var html = `<div class="upper-messages">
+    var img = '';
+    if (message.image.url){
+      var img =`<img src="${message.image.url}", class="lower-message__content">`;
+    }
+    var html = `<div class="messages">
+                  <div class="upper-messages">
                     <div class="upper-message__user-name">
                       ${message.user_name}
                     </div>
@@ -12,7 +17,8 @@ $(function(){
                     <p class="lower-message__content">
                       ${message.content}
                     </p>
-                  <img src="${message.image}", class: 'lower-message__content'>
+                    ${img}
+                  </div>
                   </div>
                 `
     return html;
@@ -20,7 +26,8 @@ $(function(){
   $('#new_message').on('submit', function(e){
     e.preventDefault();
     var formData = new FormData(this);
-    var url = $(this).attr('action')
+    var url = $(this).attr('action');
+    console.log(formData.get('message[image]'));
     $.ajax({
       url: url,
       type: "POST",
@@ -30,15 +37,17 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      console.log(data);
+      // console.log(data.image);
       var html = buildHTML(data);
-      $('.messagesa').append(html)
-      $('.mainmessages').animate({scrollTop:$('.messages')[0].scrollHeight},'fast');
+      $('.messagesa').append(html);
+      // console.log($('.messages')[0].scrollHeight);
+      // console.log($('.messages').last().height());
+      $('.mainmessages').animate({scrollTop: $('.messagesa').height()},'fast');
       $('.form__message__js__content').val("");
-      $('.form__submit').prop('disabled', false)
+      $('.form__submit').attr('disabled', false)
     })
     .fail(function(){
       alert('error');
     })
-  })
+  });
 });
