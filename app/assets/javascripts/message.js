@@ -27,7 +27,6 @@ $(function(){
     e.preventDefault();
     var formData = new FormData(this);
     var url = $(this).attr('action');
-    console.log(formData.get('message[image]'));
     $.ajax({
       url: url,
       type: "POST",
@@ -37,12 +36,9 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      // console.log(data.image);
       var html = buildHTML(data);
-      $('.messagesa').append(html);
-      // console.log($('.messages')[0].scrollHeight);
-      // console.log($('.messages').last().height());
-      $('.mainmessages').animate({scrollTop: $('.messagesa').height()},'fast');
+      $('.mainmessages__list').append(html);
+      $('.mainmessages').animate({scrollTop: $('.mainmessages__list').height()},'fast');
       $('.form__message__js__content').val("");
       $('.form__submit').attr('disabled', false)
     })
