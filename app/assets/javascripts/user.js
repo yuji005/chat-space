@@ -27,11 +27,11 @@ $(function() {
       })
 // ユーザーの検索に成功
 // 非同期通信の結果をdoneの関数の引数から受け取り、viewに追加するHTMLを作成
-      .done(function(user){
+      .done(function(users){
         $('#user-search-result').empty();
 // jbuilderから送られてきた配列によって場合分け、関数呼び出し
-        if (user.length !== 0) {
-          user.forEach(function(user){
+        if (users.length !== 0) {
+          users.forEach(function(user){
             appendUser(user);
           });
         }
