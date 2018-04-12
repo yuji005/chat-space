@@ -1,10 +1,11 @@
 $(function(){
-  function buildHTML(message){
+// メッセージの非同期通信
+function buildHTML(message){
     var img = '';
     if (message.image.url){
       var img =`<img src="${message.image.url}", class="lower-message__content">`;
     }
-    var html = `<div class="messages">
+    var html = `<div class="messages" data-message-id=${message.id}>
                   <div class="upper-messages">
                     <div class="upper-message__user-name">
                       ${message.user_name}
@@ -46,4 +47,34 @@ $(function(){
       alert('error');
     })
   });
+
+  function autoUpdate(){
+      var url = window.location.pathname;
+      if (url.match(/\/groups\/\d+\/messages/)) {
+      var message_id = $('.messages').last().data('message-id');
+      if (message_id !== null){
+      $.ajax({
+        url: url,
+        type: 'GET',
+        data: { id : message_id},
+        dataType: 'json',
+      })
+    .done(function(messages){
+      if (messages.lenghth !== 0) {
+        messages.forEach(function(message) {
+        var html = buildHTML(message);
+          $('.mainmessages__list').append(html);
+          $('.mainmessages').animate({scrollTop: $('.mainmessages__list').height()},'fast');
+        });
+      }
+    })
+    .fail(function() {
+      alert('自動更新に失敗しました');
+    })
+  }
+  } else {
+    clearInterval(autoUpdate);
+    }
+  };
+  setInterval(autoUpdate,3000);
 });

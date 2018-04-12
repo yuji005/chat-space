@@ -1,6 +1,6 @@
 .chat-group-form
   %h1 チャットグループ編集
-  = render 'form', { group: @group }
+  = render partial:'form', { group: @group }
 
     / %input{name: "utf8", type: "hidden", value: "✓"}/
     / %input{name: "_method", type: "hidden", value: "patch"}/
