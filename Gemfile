@@ -47,6 +47,10 @@ group :development, :test do
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
   gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
+  gem "factory_girl_rails", "~> 4.0"
+  gem 'faker'
+end
+
   gem 'haml-rails'
   gem 'erb2haml'
   gem 'font-awesome-rails'
@@ -56,9 +60,8 @@ group :development, :test do
   gem 'pry-rails'
   gem 'rspec-rails', '~> 3.5'
   gem 'rails-controller-testing'
-  gem "factory_girl_rails", "~> 4.0"
-  gem 'faker'
-end
+
+
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
