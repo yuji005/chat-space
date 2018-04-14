@@ -42,7 +42,7 @@ server '52.69.14.87', user: 'ec2-user', roles: %w{app db web}# server-based synt
 # Global options
 # --------------
 #  set :ssh_options, {
-#    keys: %w(/home/rlisowski/.ssh/id_rsa),
+#    keys: %w(/home/rlisowski/.ssh/matumoto0816.pem),
 #    forward_agent: false,
 #    auth_methods: %w(password)
 #  }
