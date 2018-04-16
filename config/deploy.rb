@@ -1,4 +1,5 @@
 # config valid for current version and patch releases of Capistrano
+set :linked_files, %w{ config/secrets.yml }
 lock "3.10.1"
 
 set :application, "chat-space"
